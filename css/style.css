@@ -73,11 +73,11 @@ body {
 
 #spinner {
     visibility: hidden;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
 
-    border: 5px solid #f3f3f3;
-    border-top: 6px solid #f25a41;
+    border: 9px solid #f3f3f3;
+    border-top: 10px solid #f25a41;
     border-radius: 100%;
     position: absolute;
     top: 0;
