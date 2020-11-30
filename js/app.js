@@ -17,6 +17,11 @@ function hideSpinner() {
     loading.className = loading.className.replace("show", "");
 }
 
+function errorHandler(error) {
+    hideSpinner()
+    quote.innerHTML = "Error " + error;
+}
+
 function getQuote() {
     showSpinner()
      fetch('https://thesimpsonsquoteapi.glitch.me/quotes')
@@ -27,4 +32,5 @@ function getQuote() {
          author.innerHTML = data[0].character;
          document.getElementById('img').src = data[0].image;
      })
+     .catch(errorHandler)
 }
